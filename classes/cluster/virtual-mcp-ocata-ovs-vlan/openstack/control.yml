@@ -99,8 +99,8 @@ parameters:
         driver: messagingv2
         topics: "notifications,${_param:stacklight_notification_topic}"
       # ToDo: uncomment after range clarification
-      #backend:
-      #  tenant_vlan_range: 1100:1200
+      backend:
+        tenant_vlan_range: 223:224
   nova:
     controller:
       networking: dvr

@@ -22,28 +22,28 @@ parameters:
     cluster_name: virtual-mcp-ocata-ovs-vlan
     infra_config_hostname: cfg01
     # infra service addresses
-    infra_config_address: 10.60.0.100
+    infra_config_address: 10.60.10.100
     # openstack service addresses
-    openstack_proxy_address: 10.60.0.121
-    openstack_proxy_node01_address: 10.60.0.121
-    openstack_control_address: 10.60.0.254
-    openstack_control_node01_address: 10.60.0.101
-    openstack_control_node02_address: 10.60.0.102
-    openstack_control_node03_address: 10.60.0.103
-    openstack_gateway_address: 10.60.0.110
+    openstack_proxy_address: 10.60.10.121
+    openstack_proxy_node01_address: 10.60.10.121
+    openstack_control_address: 10.60.10.254
+    openstack_control_node01_address: 10.60.10.101
+    openstack_control_node02_address: 10.60.10.102
+    openstack_control_node03_address: 10.60.10.103
+    openstack_gateway_address: 10.60.10.110
     openstack_database_address: ${_param:openstack_control_address}
     openstack_message_queue_address: ${_param:openstack_control_address}
     openstack_message_queue_node01_address: ${_param:openstack_control_node01_address}
     openstack_message_queue_node02_address: ${_param:openstack_control_node02_address}
     openstack_message_queue_node03_address: ${_param:openstack_control_node03_address}
     # stacklight service addresses
-    stacklight_monitor_address: 10.60.0.254
-    stacklight_monitor_node01_address: 10.60.0.101
-    stacklight_monitor_node02_address: 10.60.0.102
-    stacklight_monitor_node03_address: 10.60.0.103
+    stacklight_monitor_address: 10.60.10.254
+    stacklight_monitor_node01_address: 10.60.10.101
+    stacklight_monitor_node02_address: 10.60.10.102
+    stacklight_monitor_node03_address: 10.60.10.103
     stacklight_telemetry_node01_address: ${_param:stacklight_monitor_node01_address}
     stacklight_log_address: ${_param:stacklight_monitor_address}
-    openstack_gateway_address: 10.60.0.110
+    openstack_gateway_address: 10.60.10.110
     openstack_gateway_node01_address: ${_param:openstack_gateway_address}
     stacklight_telemetry_address: ${_param:stacklight_monitor_address}
 
