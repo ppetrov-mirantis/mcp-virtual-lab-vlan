@@ -6,7 +6,7 @@ parameters:
     openstack_region: RegionOne
     admin_email: root@localhost
     cluster_public_protocol: http
-    cluster_public_host: 172.16.10.254
+    cluster_public_host: 10.60.0.254
     neutron_public_protocol: http
     neutron_control_dvr: False
     neutron_tenant_network_types: "flat,vlan"
@@ -21,14 +21,14 @@ parameters:
     galera_server_cluster_name: openstack_cluster
     galera_server_maintenance_password: workshop
     galera_server_admin_password: workshop
-    cluster_vip_address: 172.16.10.254
+    cluster_vip_address: 10.60.0.254
     cluster_local_address: ${_param:single_address}
     cluster_node01_hostname: ctl01
-    cluster_node01_address: 172.16.10.101
+    cluster_node01_address: 10.60.0.101
     cluster_node02_hostname: ctl02
-    cluster_node02_address: 172.16.10.102
+    cluster_node02_address: 10.60.0.102
     cluster_node03_hostname: ctl03
-    cluster_node03_address: 172.16.10.103
+    cluster_node03_address: 10.60.0.103
     rabbitmq_secret_key: workshop
     rabbitmq_admin_password: workshop
     rabbitmq_openstack_password: workshop
@@ -69,12 +69,12 @@ parameters:
     heat_service_host: ${_param:cluster_vip_address}
     heat_domain_admin_password: workshop
     ceilometer_version: ${_param:openstack_version}
-    ceilometer_service_host: 172.16.10.108
+    ceilometer_service_host: 10.60.0.108
     cinder_version: ${_param:openstack_version}
     cinder_service_host: ${_param:cluster_vip_address}
     aodh_version: ${_param:openstack_version}
     aodh_service_host: ${_param:cluster_vip_address}
-    ceilometer_graphite_publisher_host: 172.16.10.107
+    ceilometer_graphite_publisher_host: 10.60.0.107
     ceilometer_graphite_publisher_port: 2013
     nova_version: ${_param:openstack_version}
     nova_service_host: ${_param:cluster_vip_address}
@@ -158,12 +158,12 @@ parameters:
           - gtw01
           - gtw01.${_param:cluster_domain}
         cmp01:
-          address: 172.16.10.105
+          address: 10.60.0.105
           names:
           - cmp01
           - cmp01.${_param:cluster_domain}
         cmp02:
-          address: 172.16.10.106
+          address: 10.60.0.106
           names:
           - cmp02
           - cmp02.${_param:cluster_domain}

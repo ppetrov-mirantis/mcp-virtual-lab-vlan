@@ -33,8 +33,8 @@ parameters:
     reclass_data_revision: master
     salt_master_environment_repository: "https://github.com/tcpcloud"
     salt_master_environment_revision: master
-    reclass_config_master: 192.168.10.90
-    single_address: 172.16.10.100
+    reclass_config_master: 10.70.0.100
+    single_address: 10.60.0.100
     salt_master_host: 127.0.0.1
     salt_master_base_environment: prd
     salt_minion_ca_host: ${linux:network:fqdn}
@@ -169,18 +169,18 @@ parameters:
           - system.influxdb.database.stacklight
         openstack_compute_node01:
           params:
-            single_address: 172.16.10.105
-            tenant_address: 10.1.0.105
-            external_address: 10.16.0.105
+            single_address: 10.60.0.105
+            tenant_address: 10.80.0.105
+            external_address: 10.90.0.105
         openstack_compute_node02:
           params:
-            single_address: 172.16.10.106
-            tenant_address: 10.1.0.106
-            external_address: 10.16.0.106
+            single_address: 10.60.0.106
+            tenant_address: 10.80.0.106
+            external_address: 10.90.0.106
         openstack_gateway_node01:
           params:
-            tenant_address: 10.1.0.110
-            external_address: 10.16.0.110
+            tenant_address: 10.80.0.110
+            external_address: 10.90.0.110
         openstack_proxy_node01:
           classes:
           - cluster.virtual-mcp-ocata-ovs-vlan.openstack.proxy
